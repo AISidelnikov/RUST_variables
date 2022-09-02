@@ -24,4 +24,12 @@ fn main() {
     let z = 'z';
     let c = 'c';
     println!("z = {}", z);
+
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("Значение y = {}", y);
+    println!("Значение tup.x = {}, tup.y = {}, tup.z = {}", tup.0, tup.1, tup.2);
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("Значение массива a = {} {} {} {} {}", a[0], a[1], a[2], a[3], a[4]);
 }
